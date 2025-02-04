@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  padding: var(--size-4);
+}
+
+table {
+  margin-top: var(--size-2);
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+tr:nth-child(even) {
+  background-color: var(--surface-1);
+}
+tr:nth-child(odd) {
+  background-color: var(--surface-0);
+}
+
+tr:has(td:hover) {
+  background-color: var(--surface-3);
+  font-style: italic;
+  font-weight: bolder;
+}
+
+button#prev:active,
+button#next:active {
+  cursor: progress;
+}
